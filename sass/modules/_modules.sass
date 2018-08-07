@@ -7,36 +7,88 @@ $rgbaaccent: rgba(220, 74, 122, .8)
 @import "skillset"
 @import "calltoaction"
 @import "portfolio"
+@import "footer"
 
-#footer
-  background-color: $accentcolor
+$break-sml: 425px
+$break-med: 768px
+$break-lg: 1024px
+$break-xlg: 1440px
 
-#footer h2
-  text-align: center
-  font:
-    family: Montserrat
-    size: 200
-  padding: 20px 0
-  color: white
+@media screen and (min-width: $break-sml)
+  .skillyear
+    width: 15%
 
-#footer .contact-icon
-  display: block
-  font-size: 48px
-  margin-bottom: 20px
+  .skill-container
+    width: 70%
+    margin: 0 auto
 
-#footer a
-  text-decoration: none
-  color: white
-  display: block
-  padding-bottom: 20px
-  text-align: center
-  font:
-    size: 24px
-    family: OpenSans
-  margin: 0 auto
 
-#footer .copyright
-  text-align: center
-  padding-bottom: 20px
-  font-family: Montserrat
-  color: rgba(0,0,0,.1)
+@media screen and (min-width: $break-med)
+  .skill
+    width: 45%
+
+  .skill-container
+    width: 90%
+    flex-flow: row !important
+    flex-wrap: wrap !important
+    justify-content: space-around
+    align-content: center
+
+  .project-container
+    flex-flow: column !important
+    flex-wrap: wrap !important
+
+  .project
+    width: 45%
+
+  .project-selected
+    width: 100%
+
+@media screen and (min-width: $break-lg)
+  .skill
+    width: 50%
+
+  .skill:nth-child(odd)
+    padding-right: 20px
+
+  .skill:nth-child(even)
+    padding-left: 20px
+
+  .skillset-section
+    width: 70%
+    margin: 0 auto 20px
+
+  .skill-container
+    width: 100%
+
+  .project p
+    width: 80%
+    margin: 0 auto
+
+  .project-selected p
+    margin: 0 auto 40px
+
+@media screen and (min-width: $break-xlg)
+  .skill
+    width: 33.3%
+
+
+  .skill:nth-child(3n+3)
+    padding-left: 40px
+    padding-right: 0
+
+
+  .skillset-section
+    width: 70%
+    margin: 0 auto 20px
+
+  .skill-container
+    width: 100%
+
+  .call-to-action
+    height: 100px
+
+    margin: 0 auto
+.skill-container
+  display: flex
+  flex-flow: column

@@ -43,11 +43,13 @@
   margin: 40px 0 20px; }
 
 .skillyear {
-  background-color: #eee;
+  background-color: #ddd;
   height: 5px;
   width: 50px;
   display: block;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
 
 .in-view .filled::after {
   width: 100%; }
