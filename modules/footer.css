@@ -1,0 +1,30 @@
+#footer {
+  background-color: #ef3f79; }
+
+#footer h2 {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 200;
+  padding: 20px 0;
+  color: white; }
+
+#footer .contact-icon {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 20px; }
+
+#footer a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-family: OpenSans;
+  margin: 0 auto; }
+
+#footer .copyright {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: Montserrat;
+  color: rgba(0, 0, 0, 0.1); }

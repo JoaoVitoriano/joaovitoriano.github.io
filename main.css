@@ -86,6 +86,7 @@ header::before {
   height: 35px;
   top: 22px;
   left: 50%;
+  border-top-left-radius: 5px;
   -webkit-transform: translate(-50%) rotate(45deg);
   transform: translate(-50%) rotate(45deg);
   background-color: white;
@@ -176,11 +177,13 @@ header::before {
   margin: 40px 0 20px; }
 
 .skillyear {
-  background-color: #eee;
+  background-color: #ddd;
   height: 5px;
   width: 50px;
   display: block;
-  position: relative; }
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease; }
 
 .in-view .filled::after {
   width: 100%; }
@@ -238,7 +241,8 @@ header::before {
   background-size: 100%;
   background-position: 50%;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  margin: 0 60px; }
 
 .call-to-action::after {
   content: "";
@@ -277,6 +281,16 @@ header::before {
   padding-right: 0;
   padding-bottom: 0; }
 
+.project-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column; }
+
 .project {
   width: 87%;
   margin: 0 auto;
@@ -289,9 +303,6 @@ header::before {
   -webkit-box-direction: normal;
   -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 0 auto;
   background-image: url("./img/gourmazin.jpg");
   background-size: cover;
@@ -358,7 +369,8 @@ header::before {
   z-index: 10;
   -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
-  padding: 30px 0; }
+  padding: 30px 0;
+  text-align: center; }
 
 .project-selected h3 {
   padding: 20px 0;
@@ -368,7 +380,7 @@ header::before {
 
 .project-selected p {
   max-height: 500px;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
 
 #footer {
   background-color: #ef3f79; }
@@ -400,6 +412,82 @@ header::before {
   padding-bottom: 20px;
   font-family: Montserrat;
   color: rgba(0, 0, 0, 0.1); }
+
+@media screen and (min-width: 425px) {
+  .skillyear {
+    width: 15%; }
+  .skill-container {
+    width: 70%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 768px) {
+  .skill {
+    width: 45%; }
+  .skill-container {
+    width: 90%;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-flow: row !important;
+    flex-flow: row !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .project-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-flow: column !important;
+    flex-flow: column !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important; }
+  .project {
+    width: 45%; }
+  .project-selected {
+    width: 100%; } }
+
+@media screen and (min-width: 1024px) {
+  .skill {
+    width: 50%; }
+  .skill:nth-child(odd) {
+    padding-right: 20px; }
+  .skill:nth-child(even) {
+    padding-left: 20px; }
+  .skillset-section {
+    width: 70%;
+    margin: 0 auto 20px; }
+  .skill-container {
+    width: 100%; }
+  .project p {
+    width: 80%;
+    margin: 0 auto; }
+  .project-selected p {
+    margin: 0 auto 40px; } }
+
+@media screen and (min-width: 1440px) {
+  .skill {
+    width: 33.3%; }
+  .skill:nth-child(3n+3) {
+    padding-left: 40px;
+    padding-right: 0; }
+  .skillset-section {
+    width: 70%;
+    margin: 0 auto 20px; }
+  .skill-container {
+    width: 100%; }
+  .call-to-action {
+    height: 100px;
+    margin: 0 auto; } }
+
+.skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column; }
 
 @font-face {
   font-family: Montserrat;
