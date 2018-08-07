@@ -1,0 +1,17 @@
+.section-title {
+  text-align: center;
+  font-family: Montserrat;
+  margin-bottom: 20px; }
+
+.section-icon {
+  font-size: 48px;
+  color: #111;
+  margin-bottom: 20px; }
+
+.section-title h2 {
+  font-size: 32px;
+  color: #111; }
+
+.section {
+  background-color: white;
+  padding: 40px 20px 20px; }

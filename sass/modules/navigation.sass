@@ -1,0 +1,63 @@
+$accentcolor: #ef3f79
+
+.sticky
+  position: fixed !important
+  top: 0
+  box-shadow: 0px 2px 15px rgba(0,0,0,.4)
+  z-index: 100
+  background-color: white
+  transition: all 200ms ease-out
+  top: 0 !important
+
+.sticky .nav-separator
+  top: -50px
+  z-index: 50
+  transform: translate(-50%) rotate(225deg)
+
+
+.main-nav
+  display: flex
+  list-style-type: none
+  overflow: hidden
+  position: absolute
+  top: -40px
+  left: 0
+  height: 40px
+  width: 100%
+  transition: all 200ms ease-out
+
+.nav-separator
+  z-index: 20
+  display: block
+  width: 35px
+  height: 35px
+  top: 22px
+  left: 50%
+  transform: translate(-50%) rotate(45deg)
+  background-color: white
+  position: absolute
+  transition: all 200ms ease-out
+
+
+
+.main-nav a
+
+  width: 100%
+  text-align: center
+  color: white
+  padding: 10px 0
+  font-family: Montserrat
+  background-color: #111
+  text-decoration: none
+  transition: all 150ms ease-out
+
+.active
+  background-color: $accentcolor !important
+
+
+.sticky .active
+  width: 150% !important
+
+
+.main-nav a i
+  margin-right: 10px
