@@ -378,7 +378,8 @@ header::before {
   -webkit-transition: all 400ms ease-out;
   transition: all 400ms ease-out;
   padding: 30px 0;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer; }
 
 .project-selected h3 {
   padding: 20px 0;
